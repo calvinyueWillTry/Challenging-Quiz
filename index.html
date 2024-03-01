@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Random Facts Challenge Quiz</title>
+    <link rel="stylesheet" href="./random_facts_challenge_quiz.css" />
+  </head>
+
+  <body>
+    <!--- Start page --> 
+    <div id = "top" class="topPage">
+        <header>
+            Random Facts Challenge Quiz
+        </header>
+    </div>
+    <div id= "instructions" class="middle">
+        <main>
+            <p>
+            Greetings, welcome to my random facts quiz. This will be a challenging quiz, so if you're up for it, please click the button below to get started!
+            </p>
+        </main>
+    </div>
+    <div id="beginGame" class="button">
+        <button id="start">
+            Begin the Quiz!
+        </button>
+    </div>
+    <div id="scorelist" class="scoreslist">
+        <button class="button">
+            View Highscores
+        </button>
+    </div>
+    <div id="time" class="timeLimit">
+        Time: <span id="timeClock">0</span>
+    </div>
+
+     <!--- Quiz section -->
+    <div>
+
+    </div>
+
+    <!--- End of quiz page -->
+    <div id="gameFinished" class="covered">
+        <p>Congratulations! You have completed the quiz!</p>
+        <p> You scored a <span id="quizScore"></span> </p>
+        <p>
+            Please enter your codename: <input id="inputText" class="inputName">
+        </p>
+        <p>
+            <button class="button">Add your score </button>
+        </p>
+    </div>
+
+  </body>
+  <script src="./random_facts_challenge_quiz.js"> </script>
+</html>

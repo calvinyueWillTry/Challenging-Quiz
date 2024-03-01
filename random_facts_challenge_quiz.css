@@ -1,0 +1,40 @@
+/* need to connect to the HTML? */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: bold;
+    padding: 5%;
+    flex-wrap: wrap;
+    text-align: center;
+}
+header {
+    background-color: aquamarine;
+    border-radius: 10%;
+    border-style: double;
+    text-decoration-color: aliceblue;
+}
+main {
+    background-color: blueviolet;
+    text-decoration-color: aliceblue;
+    border-radius: 5%;
+}
+button {
+    border-radius: 15%;
+    background-color: rgb(80, 208, 119);
+    text-decoration-color: black;
+}
+scorelist {
+    background-color: azure;
+    text-decoration-color: black;
+    border-radius: 5%;
+}
+time {
+    background-color: chocolate;
+    text-decoration-color: aliceblue;
+    border-radius: 5%;
+}
+gameFinished {
+    background-color: cadetblue;
+    text-decoration-color: aliceblue;
+    border-radius: 5%;
+}
