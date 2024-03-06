@@ -23,6 +23,10 @@ button {
     background-color: rgb(80, 208, 119);
     text-decoration-color: black;
 }
+button:hover {
+    background-color:skyblue; 
+
+}
 scorelist {
     background-color: azure;
     text-decoration-color: black;
@@ -37,4 +41,10 @@ gameFinished {
     background-color: cadetblue;
     text-decoration-color: aliceblue;
     border-radius: 5%;
+}
+img {
+    background-image: url(./yay.gif);
+}
+.hidden {
+    display: none;
 }

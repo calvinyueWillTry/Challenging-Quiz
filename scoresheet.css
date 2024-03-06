@@ -1,0 +1,46 @@
+body {
+    flex-wrap: wrap;
+    background-image: url(./fireworks.gif);
+    text-align: center;
+}
+header {
+    background-color: aquamarine;
+    border-radius: 10%;
+    border-style: double;
+    text-decoration-color: aliceblue;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.button {
+    background-color: coral;
+    padding: 20px;
+    color: azure;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+button:hover {
+    background-color:skyblue; 
+
+}
+table {
+    /* How to have 1st name and last name at the top? 2 columns or 1  with name, rank and score*/
+    display: flex;
+    text-align: center;
+    border-style: dashed;
+    color: azure;
+} 
+.scoreTable {
+    flex-direction: column;
+    column-count: 3;
+    column-width: 30%;
+    column-gap: 5px;
+}
+tr {
+    flex-direction: row;
+    
+}
+thread {
+    flex-direction: row;
+    font-size: larger;
+    font-weight: bold;
+}

@@ -11,6 +11,7 @@
 
   <body>
     <!--- Start page --> 
+   <div id="firstPage">
     <div id = "top" class="topPage">
         <header>
             Random Facts Challenge Quiz
@@ -19,7 +20,7 @@
     <div id= "instructions" class="middle">
         <main>
             <p>
-            Greetings, welcome to my random facts quiz. This will be a challenging quiz, so if you're up for it, please click the button below to get started!
+            Greetings, welcome to my random facts quiz. This will be a challenging quiz, so if you're up for it, please click the button below to get started! Keep in mind if you select the wrong answer, you will lose 10 seconds, so don't click unless you're sure!
             </p>
         </main>
     </div>
@@ -28,32 +29,46 @@
             Begin the Quiz!
         </button>
     </div>
-    <div id="scorelist" class="scoreslist">
-        <button class="button">
+   </div>
+   
+   <!--- navigation link to change pages to the scoresheet
+How come this is still not working? -->
+    <div id="scorelist" class="scoresheet">
+        <button id = "highlightButton" class="button" href = "./scoresheet.html">
             View Highscores
         </button>
     </div>
     <div id="time" class="timeLimit">
-        Time: <span id="timeClock">0</span>
+        Time: <span id="timeClock"></span>
     </div>
 
      <!--- Quiz section -->
-    <div>
-
+    <div id="questionBox" class="hidden">
+        <p id="questionnaire"></p>
+        <div id="answerBelow" class="choosing"> </div>
+        <div id="response"></div>
     </div>
+    
 
+    <!--- End of quiz -->
     <!--- End of quiz page -->
-    <div id="gameFinished" class="covered">
-        <p>Congratulations! You have completed the quiz!</p>
-        <p> You scored a <span id="quizScore"></span> </p>
-        <p>
-            Please enter your codename: <input id="inputText" class="inputName">
-        </p>
-        <p>
-            <button class="button">Add your score </button>
-        </p>
+    <div id="gameFinished" class="hidden"> 
+    <div>
+     <p>Congratulations! You have completed the quiz!</p>
+ <!--- How to insert a space to input? -->
+    <img src="./yay.gif">
+    <p> You scored a <span id="quizScore"></span> out of a maximum score of 60 </p>
+     <p>
+         Please enter your codename: <input id="inputText" class="inputName">
+     </p>
+     <p>
+         <button id = "endbutton" class="button">Add your score </button>
+     </p>
+     </div>
     </div>
-
+      <script src="./quiz_questions.js"></script>
+      <script src="./random_facts_challenge_quiz.js"> </script>
   </body>
-  <script src="./random_facts_challenge_quiz.js"> </script>
+  <!--- Quiz questions and scoresheet need to be on a separate page -->
+  
 </html>
